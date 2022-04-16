@@ -147,5 +147,6 @@ def main():
   print(f'_______________________')
   for i in range(len(resultado[0])):
     print(f'|     {resultado[0][i]}     |    {resultado[1][i]}|')
-  print(f'_______________________')
+  print(f'¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯')
+  
 main()
