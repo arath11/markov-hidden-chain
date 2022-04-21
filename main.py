@@ -9,7 +9,7 @@ from scipy.io import wavfile
 #se usa MFCC para tener el espectro
 
 #extract
-def extract(filePath):
+"""def extract(filePath):
     sampling_freq, audio = wavfile.read(filePath)
     mfcc_features = mfcc(audio, sampling_freq)
     filterbank_features = logfbank(audio, sampling_freq)
@@ -20,6 +20,7 @@ def extract(filePath):
     print('Length of each feature =', filterbank_features.shape[1])
 
 #extract("./training/dog/PoodleLadrido.wav")
+"""
 """"
 def samples():
     genre_list = ["Electro","Pop","Reg"]
@@ -131,7 +132,7 @@ def classify(hmm_models):
         if score > max_score:
             max_score = score
             output_label = label
-            
+            print(f"{output_label}:{max_score}")
       #  print(f'{score}___{label}')            
       pred_labels.append(output_label)
   return [pred_labels,real_labels]
